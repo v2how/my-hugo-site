@@ -1,18 +1,18 @@
 ---
 title: "Creating a Cloudflare Pages Site from a Windows PC"
-date: 2021-03-11
+date: 2021-03-12
 ---
 
 ## Introduction
 
-Cloudflare Pages is currently in Beta.
+[Cloudflare Pages](https://blog.cloudflare.com/cloudflare-pages) is currently in Beta.
 
 This tutorial will show you how to create a static site on Cloudflare Pages using the Hugo static site generator from a Windows PC.
 
 ## Prerequisites
 
 - Open an account on GitHub https://github.com and verify your email address
-- Open an account on Cloudflare https://www.cloudflare.com, verify your email address, and request access to the Cloudflare Pages Beta
+- Open an account on Cloudflare https://www.cloudflare.com, verify your email address, and [request access to the Cloudflare Pages Beta](https://www.cloudflare.com/pages-jamstack-platform-beta-sign-up)
 
 ## Step 1 — Installing Git
 
@@ -154,12 +154,12 @@ When you are done, close your browser, and press **CTRL**+**C** to stop Hugo run
 
 ## Step 5 — Creating a Hugo Post
 
-Create a new post. This example is named `2021-03-11-cloudflare-pages-site-windows`, but you should choose a name of your own.
+Create a new post. This example is named `2021-03-12-cloudflare-pages-site-windows`, but you should choose a name of your own.
 
 ```
 cd C:\Hugo\sites\my-hugo-site
 
-hugo new post/2021-03-11-cloudflare-pages-site-windows.md
+hugo new post/2021-03-12-cloudflare-pages-site-windows.md
 ```
 
 Edit the file in Notepad.
