@@ -226,6 +226,8 @@ Log in to your Cloudflare account.
 
 If you have been granted access to Cloudflare Pages Beta, you will see a link for **Pages (Beta)**. Click that link.
 
+![Cloudflare Pages Beta link](/img/cloudflare-pages-beta-link.png)
+
 1. Click **Create a project**.
 2. Click **Connect GitHub account**.
 3. Click **Install and Authorize**.
@@ -234,11 +236,13 @@ If you have been granted access to Cloudflare Pages Beta, you will see a link fo
 6. In the **Environment variables**, add `HUGO_VERSION` and set it to `0.80.0`.
 7. Click **Save and Deploy**.
 
+![Cloudflare Environment variables](/img/cloudflare-environment-variables.png)
+
 You will see the progress of the stages of the build: Initializing build environment; cloning Git repository; Building application; and Deploying to Cloudflare's global network.
 
-Once you've deployed your site, you'll receive a unique subdomain for your project in the `pages.dev` domain. For example, `https://c30aee8a.my-hugo-site.pages.dev`.
+Once you've deployed your site, you'll receive a unique subdomain for your project in the `pages.dev` domain. For example, `https://my-hugo-site.pages.dev`. 
 
 ## Conclusion
 
-Every time you commit new code to your Hugo site, Cloudflare Pages will automatically rebuild your project and deploy it.
+Every time you commit new code, Cloudflare Pages will automatically rebuild your project and deploy it.
 
