@@ -184,12 +184,13 @@ Open a browser and visit `localhost:1313`. Click through to the body of your pos
 
 When you are done, close your browser, and press **CTRL**+**C** in the Command Prompt windows to stop the Hugo server.
 
-
 ## Step 6 — Creating a GitHub Repository
 
 Log in to your GitHub account.
 
 Create a new GitHub repository.
+
+![GitHub create new repository](/img/github-new-repository.png)
 
 1. Give it a name, e.g. `my-hugo-site`.
 2. Description is optional.
@@ -225,21 +226,17 @@ Log in to your Cloudflare account.
 
 If you have been granted access to Cloudflare Pages Beta, you will see a link for **Pages (Beta)**. Click that link.
 
-Click **Create a project**.
+1. Click **Create a project**.
+2. Click **Connect GitHub account**.
+3. Click **Install and Authorize**.
+4. Select your new GitHub repository that you created above, e.g. `my-hugo-site`, and click **Begin setup**.
+5. Set **Production branch** to `main`, **Build command** to `hugo`, and **Build output directory** to `public`.
+6. In the **Environment variables**, add `HUGO_VERSION` and set it to `0.80.0`.
+7. Click **Save and Deploy**.
 
-Select your new GitHub repository that you created above, and in the configuration section, provide the following information:
+You will see the progress of the stages of the build: Initializing build environment; cloning Git repository; Building application; and Deploying to Cloudflare's global network.
 
-Configuration option	Value
-
-Production branch	main
-Build command	hugo
-Build directory	public
-
-Once you've configured your site, you can begin your first deploy. You should see Cloudflare Pages installing create-react-app, your project dependencies, and building your site, before deploying it.
-
-For the complete guide to deploying your first site to Cloudflare Pages, check out our Getting Started guide.
-
-Once you've deployed your site, you'll receive a unique subdomain for your project on pages.dev. 
+Once you've deployed your site, you'll receive a unique subdomain for your project in the `pages.dev` domain. For example, `https://c30aee8a.my-hugo-site.pages.dev`.
 
 ## Conclusion
 
