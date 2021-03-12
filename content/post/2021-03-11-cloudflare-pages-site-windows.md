@@ -203,7 +203,11 @@ Once you've created a new repository on GitHub, push your local repository to Gi
 
 ```
 cd C:\Hugo\sites\my-hugo-site
+```
 
+In the next command, replace `yourgithubusername` by your actual user name on GitHub:
+
+```
 git remote add origin https://github.com/yourgithubusername/my-hugo-site
 
 git branch -M main
